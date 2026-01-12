@@ -7,7 +7,7 @@ const FILE_CONTENT = {
             <p><span class="keyword">import</span> { efficiency, scalability } <span class="keyword">from</span> <span class="string">'@fhd/core'</span>;</p>
             <p><span class="keyword">import</span> { strategy } <span class="keyword">from</span> <span class="string">'@fhd/executive-vision'</span>;</p>
             <br>
-            <p><span class="comment">// Fernando Héctor Delgado: Software Engineer & Corporate Strategist</span></p>
+            <p><span class="comment">// Fernando Héctor Delgado: Web Developer & Corporate Strategist</span></p>
             <p><span class="keyword">class</span> <span class="variable">DeveloperProfile</span> <span class="keyword">extends</span> <span class="variable">SystemArchitect</span> {</p>
             <p class="indent"><span class="keyword">constructor</span>() {</p>
             <p class="indent2"><span class="keyword">super</span>();</p>
@@ -95,7 +95,7 @@ document.querySelectorAll('.file').forEach(file => {
 // 4. EL ARSENAL: FETCH DE GITHUB
 async function loadGithub() {
     try {
-        const response = await fetch('https://api.github.com/users/BSC3120/repos');
+        const response = await fetch('https://api.github.com/users/Barret-Code-Agency/repos');
         const repos = await response.json();
         
         // Actualizamos el contenido de la pestaña "projects" con datos reales
