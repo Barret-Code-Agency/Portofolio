@@ -3,15 +3,14 @@ const FILE_CONTENT = {
     'home': {
         name: 'index.js',
         html: `
-            <div class="code-view">
-                <p><span class="keyword">const</span> <span class="variable">barret_agency_projects</span> = {</p>
-                <p class="indent"><span class="property">"Portofolio"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Portofolio" target="_blank">"github"</a>, <span class="string">"live"</span>: <a href="https://barret-code-agency.github.io/Portofolio/" target="_blank">"live_status"</a> },</p>
-                <p class="indent"><span class="property">"Cyrano"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Cyrano" target="_blank">"github"</a>, <span class="string">"live"</span>: <a href="https://barret-code-agency.github.io/Cyrano/" target="_blank">"live_status"</a> },</p>
-                <p class="indent"><span class="property">"AsesorarSeg"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/AsesorarSeg" target="_blank">"github"</a>, <span class="string">"live"</span>: <a href="https://barret-code-agency.github.io/AsesorarSeg/" target="_blank">"live_status"</a> },</p>
-                <p class="indent"><span class="property">"Replica-nave"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Replica-nave" target="_blank">"github"</a>, <span class="string">"live"</span>: <a href="https://barret-code-agency.github.io/Replica-nave/" target="_blank">"live_status"</a> },</p>
-                <p class="indent"><span class="property">"Practicas-estudio"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Practicas-de-estudio" target="_blank">"github"</a>, <span class="string">"live"</span>: <span class="string">"pending_deploy"</span> },</p>
-                <p class="indent"><span class="property">"Nave_Negocios"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/BSC3120/Examen-parcial" target="_blank">"github"</a>, <span class="string">"live"</span>: <a href="https://bsc3120.github.io/Examen-parcial/" target="_blank">"live_status"</a> }</p>
+           <div class="code-view">
+                <p><span class="keyword">const</span> <span class="variable">developer</span> = {</p>
+                <p class="indent"><span class="property">name</span>: <span class="string">"Fernando Héctor Delgado"</span>,</p>
+                <p class="indent"><span class="property">role</span>: <span class="string">"Fullstack Developer"</span>,</p>
+                <p class="indent"><span class="property">focus</span>: <span class="string">"Architecture"</span>, <span class="string">"Scalability"</span>,</p>
+                <p class="indent"><span class="property">status</span>: <span class="string">"Open for challenges"</span></p>
                 <p>};</p>
+                <p><span class="keyword">export default</span> <span class="variable">developer</span>;</p>
             </div>`
     },
     'skills': {
@@ -52,11 +51,11 @@ const FILE_CONTENT = {
         html: `
             <div class="code-view">
                 <p><span class="keyword">const</span> <span class="variable">barret_agency_projects</span> = {</p>
-                <p class="indent"><span class="property">"Portofolio"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Portofolio" target="_blank">"github"</a>, <span class="string">"status"</span>: <span class="string">"deploy"</span> },</p>
-                <p class="indent"><span class="property">"Cyrano"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Cyrano" target="_blank">"github"</a>, <span class="string">"status"</span>: <span class="string">"deploy"</span> },</p>
-                <p class="indent"><span class="property">"Replica-nave"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Replica-nave" target="_blank">"github"</a>, <span class="string">"status"</span>: <span class="string">"deploy"</span> },</p>
-                <p class="indent"><span class="property">"AsesorarSeg"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/AsesorarSeg" target="_blank">"github"</a>, <span class="string">"status"</span>: <span class="string">"deploy"</span> },</p>
-                <p class="indent"><span class="property">"Practicas-estudio"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Practicas-de-estudio" target="_blank">"github"</a>, <span class="string">"status"</span>: <span class="string">"deploy"</span> },</p>
+                <p class="indent"><span class="property">"Portofolio"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Portofolio" target="_blank">"github"</a>, <span class="string">"status"</span>: <a href="https://barret-code-agency.github.io/Portofolio/" target="_blank" class="string">"LIVE_DEMO"</a> }</p>
+                <p class="indent"><span class="property">"Cyrano"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Cyrano" target="_blank">"github"</a>, <span class="string">"status"</span>: <a href="https://barret-code-agency.github.io/Cyrano/" target="_blank" class="string">"LIVE_DEMO"</a> }</p>
+                <p class="indent"><span class="property">"Replica-nave"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Replica-nave" target="_blank">"github"</a>, <span class="string">"status"</span>: <a href="https://barret-code-agency.github.io/Replica-nave/" target="_blank" class="string">"LIVE_DEMO"</a> }</p>
+                <p class="indent"><span class="property">"AsesorarSeg"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/AsesorarSeg" target="_blank">"github"</a>, <span class="string">"status"</span>: <a href="https://barret-code-agency.github.io/AsesorarSeg/" target="_blank" class="string">"LIVE_DEMO"</a> }</p>
+                <p class="indent"><span class="property">"Practicas-estudio"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Practicas-de-estudio" target="_blank">"github"</a>, <span class="string">"status"</span>: "DEPLOY"</p>
                 <p class="indent"><span class="property">"Nave_Negocios"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/BSC3120/Examen-parcial" target="_blank">"github"</a>, <span class="string">"live"</span>: <a href="https://bsc3120.github.io/Examen-parcial/" target="_blank" class="string">"LIVE_DEMO"</a> }</p>
                 <p>};</p>
             </div>`
@@ -71,6 +70,7 @@ const FILE_CONTENT = {
                     <li><strong>Email:</strong> <a href="mailto:barret.code.agency@gmail.com" class="string">"barret.code.agency@gmail.com"</a></li>
                     <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fernando-h%C3%A9ctor-delgado-a6492330b/" target="_blank" class="string">"in/fdelgado"</a></li>
                     <li><strong>GitHub:</strong> <a href="https://github.com/Barret-Code-Agency" target="_blank" class="string">"Barret-Code-Agency"</a></li>
+                    <li><strong>Phome:</strong> <a href="https://web.whatsapp.com/" target="_blank" class="string">"+54 9 11 5116 0252"</a></li>
                 </ul>
                 <p style="color: #4ade80;">STATUS: READY_FOR_PROJECTS (GMT-3)</p>
             </div>`
