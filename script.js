@@ -1,37 +1,65 @@
-
+// 1. DATA ESTRUCTURADA: El motor del Arsenal (Sin recortes)
 const FILE_CONTENT = {
     'home': {
         name: 'index.js',
         html: `
             <div class="code-view">
-                <p><span class="keyword">import</span> { efficiency, scalability } <span class="keyword">from</span> <span class="string">'@fhd/core'</span>;</p>
-                <p><span class="keyword">class</span> <span class="variable">DeveloperProfile</span> <span class="keyword">extends</span> <span class="variable">SystemArchitect</span> {</p>
-                <p class="indent"><span class="keyword">constructor</span>() {</p>
-                <p class="indent2"><span class="keyword">super</span>();</p>
-                <p class="indent2"><span class="keyword">this</span>.<span class="property">name</span> = <span class="string">"Fernando Héctor Delgado"</span>;</p>
-                <p class="indent2"><span class="keyword">this</span>.<span class="property">mission</span> = <span class="string">"Transforming complex business needs into scalable software"</span>;</p>
-                <p class="indent">}</p>
-                <p>}</p>
-                <p><span class="keyword">export const</span> <span class="variable">fhd</span> = <span class="keyword">new</span> <span class="variable">DeveloperProfile</span>();</p>
+                <p><span class="keyword">const</span> <span class="variable">barret_agency_projects</span> = {</p>
+                <p class="indent"><span class="property">"Portofolio"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Portofolio" target="_blank">"github"</a>, <span class="string">"live"</span>: <a href="https://barret-code-agency.github.io/Portofolio/" target="_blank">"live_status"</a> },</p>
+                <p class="indent"><span class="property">"Cyrano"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Cyrano" target="_blank">"github"</a>, <span class="string">"live"</span>: <a href="https://barret-code-agency.github.io/Cyrano/" target="_blank">"live_status"</a> },</p>
+                <p class="indent"><span class="property">"AsesorarSeg"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/AsesorarSeg" target="_blank">"github"</a>, <span class="string">"live"</span>: <a href="https://barret-code-agency.github.io/AsesorarSeg/" target="_blank">"live_status"</a> },</p>
+                <p class="indent"><span class="property">"Replica-nave"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Replica-nave" target="_blank">"github"</a>, <span class="string">"live"</span>: <a href="https://barret-code-agency.github.io/Replica-nave/" target="_blank">"live_status"</a> },</p>
+                <p class="indent"><span class="property">"Practicas-estudio"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Practicas-de-estudio" target="_blank">"github"</a>, <span class="string">"live"</span>: <span class="string">"pending_deploy"</span> },</p>
+                <p class="indent"><span class="property">"Nave_Negocios"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/BSC3120/Examen-parcial" target="_blank">"github"</a>, <span class="string">"live"</span>: <a href="https://bsc3120.github.io/Examen-parcial/" target="_blank">"live_status"</a> }</p>
+                <p>};</p>
             </div>`
     },
     'skills': {
         name: 'skills.ts',
         html: `
             <div class="code-view">
-                <p><span class="keyword">export const</span> <span class="variable">Arsenal</span> = {</p>
-                <div class="skill-category">FRONTEND</div>
-                <div class="skill-bar"><div class="fill" style="width: 95%;">HTML5 / CSS3 / JS ES6+</div> 95%</div>
-                <div class="skill-bar"><div class="fill" style="width: 90%;">REACT / RESPONSIVE DESIGN</div> 90%</div>
-                <div class="skill-category">BACKEND & CLOUD</div>
-                <div class="skill-bar"><div class="fill" style="width: 85%;">NODE.JS / PYTHON / .NET</div> 85%</div>
-                <div class="skill-bar"><div class="fill" style="width: 75%;">DOCKER / AWS / AZURE</div> 75%</div>
+                <p><span class="keyword">export const</span> <span class="variable">FullStackArsenal</span> = {</p>
+                
+                <div class="skill-category">1. FRONTEND CORE</div>
+                <div class="skill-bar"><div class="fill" style="width: 95%;">HTML5 / CSS3 / JS ES6+ / React</div> 95%</div>
+                
+                <div class="skill-category">2. BACKEND SYSTEMS</div>
+                <div class="skill-bar"><div class="fill" style="width: 90%;">Node.js / Python / .NET Core</div> 90%</div>
+                
+                <div class="skill-category">3. BASES DE DATOS</div>
+                <div class="skill-bar"><div class="fill" style="width: 85%;">PostgreSQL / MongoDB</div> 85%</div>
+                
+                <div class="skill-category">4. DEVOPS & INFRA</div>
+                <div class="skill-bar"><div class="fill" style="width: 80%;">Git / CI-CD / Docker / AWS / Azure</div> 80%</div>
+                
+                <div class="skill-category">5. SEGURIDAD</div>
+                <div class="skill-bar"><div class="fill" style="width: 85%;">OWASP / JWT / OAuth</div> 85%</div>
+                
+                <div class="skill-category">6. ARQUITECTURA</div>
+                <div class="skill-bar"><div class="fill" style="width: 90%;">Microservicios / Serverless / Caching</div> 90%</div>
+                
+                <div class="skill-category">7. EXTRAS</div>
+                <div class="skill-bar"><div class="fill" style="width: 85%;">Testing / Documentación / UX-UI</div> 85%</div>
+                
+                <div class="skill-category">8. STRATEGY</div>
+                <div class="skill-bar"><div class="fill" style="width: 100%;">System Analysis & Logic</div> 100%</div>
+                
                 <p>};</p>
             </div>`
     },
     'projects': {
         name: 'projects.json',
-        html: `<div class="code-view"><p><span class="comment">// Cargando arsenal desde GitHub API...</span></p></div>`
+        html: `
+            <div class="code-view">
+                <p><span class="keyword">const</span> <span class="variable">barret_agency_projects</span> = {</p>
+                <p class="indent"><span class="property">"Portofolio"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Portofolio" target="_blank">"github"</a>, <span class="string">"status"</span>: <span class="string">"deploy"</span> },</p>
+                <p class="indent"><span class="property">"Cyrano"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Cyrano" target="_blank">"github"</a>, <span class="string">"status"</span>: <span class="string">"deploy"</span> },</p>
+                <p class="indent"><span class="property">"Replica-nave"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Replica-nave" target="_blank">"github"</a>, <span class="string">"status"</span>: <span class="string">"deploy"</span> },</p>
+                <p class="indent"><span class="property">"AsesorarSeg"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/AsesorarSeg" target="_blank">"github"</a>, <span class="string">"status"</span>: <span class="string">"deploy"</span> },</p>
+                <p class="indent"><span class="property">"Practicas-estudio"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/Barret-Code-Agency/Practicas-de-estudio" target="_blank">"github"</a>, <span class="string">"status"</span>: <span class="string">"deploy"</span> },</p>
+                <p class="indent"><span class="property">"Nave_Negocios"</span>: { <span class="string">"repo"</span>: <a href="https://github.com/BSC3120/Examen-parcial" target="_blank">"github"</a>, <span class="string">"live"</span>: <a href="https://bsc3120.github.io/Examen-parcial/" target="_blank" class="string">"LIVE_DEMO"</a> }</p>
+                <p>};</p>
+            </div>`
     },
     'contact': {
         name: 'contact.md',
@@ -41,12 +69,13 @@ const FILE_CONTENT = {
                 <p><span class="keyword">## Canales Oficiales</span></p>
                 <ul>
                     <li><strong>Email:</strong> <a href="mailto:barret.code.agency@gmail.com" class="string">"barret.code.agency@gmail.com"</a></li>
-                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fernando-h%C3%A9ctor-delgado-a6492330b/" target="_blank" class="string">"linkedin.com/in/fdelgado"</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fernando-h%C3%A9ctor-delgado-a6492330b/" target="_blank" class="string">"in/fdelgado"</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/Barret-Code-Agency" target="_blank" class="string">"Barret-Code-Agency"</a></li>
                 </ul>
                 <p style="color: #4ade80;">STATUS: READY_FOR_PROJECTS (GMT-3)</p>
             </div>`
     }
-}; // UN SOLO CIERRE PARA TODO EL OBJETO
+};
 
 // 2. MOTOR DE RENDERIZADO
 function renderEditor(target) {
@@ -70,26 +99,7 @@ document.querySelectorAll('.file').forEach(file => {
     });
 });
 
-// 4. INTEGRACIÓN CON GITHUB API
-async function loadGithub() {
-    try {
-        const res = await fetch('https://api.github.com/users/Barret-Code-Agency/repos?sort=updated');
-        const repos = await res.json();
-        FILE_CONTENT['projects'].html = `
-            <div class="code-view">
-                <p>{</p>
-                ${repos.slice(0, 5).map(r => `
-                    <p class="indent"><span class="property">"${r.name}"</span>: <a href="${r.html_url}" target="_blank" class="string">"view_source"</a>,</p>
-                `).join('')}
-                <p class="indent"><span class="property">"Nave_Negocios"</span>: <a href="https://bsc3120.github.io/Examen-parcial/" target="_blank" class="string">"LIVE_DEMO"</a></p>
-                <p>}</p>
-            </div>`;
-    } catch (e) {
-        FILE_CONTENT['projects'].html = `<div class="code-view"><p class="string">Error: GitHub API offline.</p></div>`;
-    }
-}
-
-// 5. LÓGICA DE LA TERMINAL (UNIFICADA)
+// 4. LÓGICA DE LA TERMINAL
 const terminalInput = document.getElementById('terminalInput');
 const terminalOutput = document.getElementById('terminalOutput');
 
